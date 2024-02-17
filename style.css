@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #494949;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: anim linear infinite;
+}
+
+button:hover {
+    background-color: #393939;
+    filter: drop-shadow(10px 10px 7px black);
+    padding: 23px;
+    transition:  all 0.5s;
+}
+@keyframes anim{
+    from{
+      transform: rotate(30deg);  
+}
+to{
+    transform: rotate3d(-360deg);
+}
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.delete-btn,
+.edit-btn,
+.done-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 20px;
+    margin: 40px;
+    cursor: pointer;
+    
+}
+li{
+    padding: 45px;
+}
+.delete-btn:hover,
+.edit-btn:hover,
+.done-btn:hover {
+    background-color: #da190b;
+    padding: 15px;
+    margin-top: 3%;
+    filter: drop-shadow(10px 20px 30px white);
+
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #757575;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox-custom:checked + .checkbox-label::after {
+    font-size: 20px;
+    color: #4CAF50;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+}
+
+.checkbox-label {
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-label:hover .checkbox-custom {
+    border-color: #4CAF50;
+}
